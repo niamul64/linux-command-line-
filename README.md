@@ -1,7 +1,29 @@
-# linux-command-line-
-
 # linux command line cheat sheet
+open terminal: ctrl+Alt+t
+open current location in the explorers in ubuntu terminal: xdg-open .
 <br>
+
+# mostly used Options :  
+```
+-E : causes less to automatically exit the first time it reaches end of file. 
+-f : forces non-regular file to open. 
+-F : causes less to exit if entire file can be displayed on first screen 
+-g : highlight the string which was found by last search command 
+-G : suppresses all highlighting of strings found by search commands 
+-i : cause searches to ignore case 
+-n : suppresses line numbers 
+-p : pattern : it tells less to start at the first occurrence of pattern in the file 
+-s : causes consecutive blank lines to be squeezed into a single blank line 
+```
+
+# usefull more options:
+```
+~                               : home dir
+example:
+cd ~                            : will change dir to home dir
+
+/                               : root dir
+```
 
 #   Bash Commands:
 ```
@@ -24,6 +46,7 @@ run command: uname -a
 run command: man date          
 ```
 # Bash Shortcuts
+
 ```
 CTRL-c                          :Stop current command
 CTRL-z                          :Sleep program
@@ -65,12 +88,32 @@ $SHELL                          :Current shell
 ```
 
 
+# cat command
+### use command to know about cat: man cat
+```
+cat                             : command use and in next line we can write and at another next line it will print
+                                : we can write till stop (ctrl+d)                                 
+```
+<img src="pictures/car print.png"/>
+<br>
+
+```
+cat text.txt                    : show text inside the text.txt file
+cat text.txt text2.txt          : will show 2 files contents togater one after another
+
+cat -n text.txt                 : will add line number to each line cause of '-n' option
+cat -s text.txt                 : will decreases more than one empty lines to one line cause of '-s' option
+```
+
 # IO Redirection
+### use command to know about: man <command>
+### '<' or  '>' are the directions
 ```
 command < file                  : Read input of command from file
-example 1: cat < file.txt       : file.txt will be read and show
+example 
+1: cat < file.txt               : file.txt will be read and show
 example 2: 
-head -n 7 file.txt              : if we want to have the first seven lines printed to standard out, we’d use "-n 7"
+head -n 7 < file.txt            : print first 7 lines from file.txt
 
 command > file                  :Write output of command to file
 example: cat > file.txt         
@@ -78,28 +121,56 @@ example: cat > file.txt
         2
         3
         4 
-('ctrl+ d' to stom input)         : 1,2,3,4 digits will be override tin the file.txt
+('ctrl+ d' to stom input)         : 1,2,3,4 digits will be overrided in the file.txt
 
+command >> file                   :Append output to file, won't over write
+example: cat >> file.txt
+
+cat text1.txt text2.txt > out.txt : will concatinate the content of two files and output to an out.txt file
 
 command > /dev/null               :Discard output of command
 example: 
 head file.txt > /dev/null         : will read the file.txt but won't show anything
 
-command >> file                   :Append output to file
-example: cat >> file.txt
+
 
 command1 | command2               :Pipe output of command1 to command2
 example:
 cat file.txt | head -7 | tail -5  
 ```
-# Directory Operations
+
+# ls commands / Directory Operations
+### use command to know about ls: man ls
 ```
-ls                                  :List of files
-pwd                                 :Show current directory
+man ls                              : show how we can use ls    
+ls                                  : List of files
+                                    : LS COMMAND ALSO USES 2ND AND 3RD PARAMETERS
+ls [options] [directory]            :
+examples:
+1. ls Document/                     : show list of files in the Documents
+2. ls -l                            : with all info show list of files (details)
+3. ls -a                            : with all the hidden files show list of files
+4. ls -al                           : will show long list os all hidden and not hidden files
+5. ls -lS                           : sort by size and show long list
+6. ls Documents/*.html              : show for all html files in documents
+7. ls -lS > Documents/out.txt       : write in file, sort by size and show long list
+                                    : here in the Documents/out.txt file we will have a output
+                                    : in stead of shoing in terminal
+8. cd 'new folder'                  : will change directory to 'new folder' 
+9. ls -d */                         : list of only the dir
+10. cd dir                          : Change directory to dir
+11. cd ..                           : Go up a directory
+12. cd ..\..                        : go two step back
+13 cd /                             : go to root directory
+14. cd                              : home directory
+```
+
+# Directory Operations
+### use command to know about the command: man <command>
+```                                 
+pwd                                 :(Print Working Directory) Show current directory
 mkdir dir                           :Make directory dir
-cd dir                              :Change directory to dir
-cd ..                               :Go up a directory
-cd ..\..                            : go two step back
+
 ```
 
 # ls Options
@@ -116,22 +187,6 @@ example2: ls -al        : two option togater
 -1                      :One file per line
 -m                      :Comma-separated output
 -Q                      :Quoted output
-```
-
-
-
-
-# mostly used Options :  
-```
--E : causes less to automatically exit the first time it reaches end of file. 
--f : forces non-regular file to open. 
--F : causes less to exit if entire file can be displayed on first screen 
--g : highlight the string which was found by last search command 
--G : suppresses all highlighting of strings found by search commands 
--i : cause searches to ignore case 
--n : suppresses line numbers 
--p pattern : it tells less to start at the first occurrence of pattern in the file 
--s : causes consecutive blank lines to be squeezed into a single blank line 
 ```
 
 
