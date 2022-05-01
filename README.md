@@ -5,6 +5,7 @@ open current location in the explorers in ubuntu terminal: xdg-open .
 necessary commands after installation:
 to install some necessary tools: sudo apt install gimp gparted synaptic <br>
 undo all unnecessary security: sudo apt install ubuntu-restricted-extras
+enable new text file by right click: touch ~/Templates/"Untitled Document"
 <hr>
 
 # mostly used Options :  
