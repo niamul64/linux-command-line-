@@ -3,7 +3,7 @@ open terminal: ctrl+Alt+t
 open current location in the explorers in ubuntu terminal: xdg-open .
 <br>
 necessary commands after installation:
-to install some necessary tools: sudo apt install gimp gparted synaptic
+to install some necessary tools: sudo apt install gimp gparted synaptic <br>
 undo all unnecessary security: sudo apt install ubuntu-restricted-extras
 <hr>
 
