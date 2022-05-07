@@ -1,4 +1,5 @@
-# pwd                                 :(Print Working Directory) Show current directory
+# pwd        :(Print Working Directory) Show current directory
+# nautilus . : open current  dir in explorer
 
 # linux command line cheat sheet
 open terminal: ctrl+Alt+t <br>
@@ -171,9 +172,10 @@ examples:
 12. cd ..\..                        : go two step back
 13 cd /                             : go to root directory
 14. cd                              : home directory
+15. ls -R                           : will show all dirs structure
 ```
 
-# Directory Operations/ mk dir
+# Directory Operations/ mkdir/ rmdir
 ### use command to know about the command: man <command>
 ```                                 
 pwd                                 :(Print Working Directory) Show current directory
@@ -181,6 +183,11 @@ mkdir dir                           : Make directory 'dir'
 mkdir -p names/mark                 : it will create a folder mark inside names folder 
                                     : if names folder not exists then it will create name folder first 
                                     : then it will create mark folder 
+mkdir -p dir1/{dir2,dir3,dir4}      : create 3 dirs in one dir
+
+rmdir dirName                       : will remove/delete dir
+rmdir -p a/b/c/d                    : will remove whole dir structure
+rmdir -pv a/b/c/d                   : (with each step details )will remove whole dir structure
 ```
 
 # ls Options
