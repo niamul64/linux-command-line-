@@ -1,11 +1,13 @@
+# pwd                                 :(Print Working Directory) Show current directory
+
 # linux command line cheat sheet
-open terminal: ctrl+Alt+t
+open terminal: ctrl+Alt+t <br>
 open current location in the explorers in ubuntu terminal: xdg-open .
 <br>
-necessary commands after installation:
+necessary commands after installation: <br>
 to install some necessary tools: sudo apt install gimp gparted synaptic <br>
-undo all unnecessary security: sudo apt install ubuntu-restricted-extras
-enable new text file by right click: touch ~/Templates/"Untitled Document"
+undo all unnecessary security: sudo apt install ubuntu-restricted-extras <br>
+enable new text file by right click: touch ~/Templates/"Untitled Document" <br>
 <hr>
 
 # mostly used Options :  
@@ -174,7 +176,7 @@ examples:
 ### use command to know about the command: man <command>
 ```                                 
 pwd                                 :(Print Working Directory) Show current directory
-mkdir dir                           :Make directory dir
+mkdir dir                           :Make directory 'dir'
 
 ```
 
