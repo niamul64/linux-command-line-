@@ -149,6 +149,7 @@ cat file.txt | head -7 | tail -5
 # ls commands / Directory Operations
 ### use command to know about ls: man ls
 ```
+pwd                                 :(Print Working Directory) Show current directory 
 man ls                              : show how we can use ls    
 ls                                  : List of files
                                     : LS COMMAND ALSO USES 2ND AND 3RD PARAMETERS
@@ -172,12 +173,14 @@ examples:
 14. cd                              : home directory
 ```
 
-# Directory Operations
+# Directory Operations/ mk dir
 ### use command to know about the command: man <command>
 ```                                 
 pwd                                 :(Print Working Directory) Show current directory
-mkdir dir                           :Make directory 'dir'
-
+mkdir dir                           : Make directory 'dir'
+mkdir -p names/mark                 : it will create a folder mark inside names folder 
+                                    : if names folder not exists then it will create name folder first 
+                                    : then it will create mark folder 
 ```
 
 # ls Options
