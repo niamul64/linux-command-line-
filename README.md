@@ -1,7 +1,10 @@
-# pwd        :(Print Working Directory) Show current directory
-# nautilus . : open current  dir in explorer
+## check php error log:  tail -f /var/log/apache2/error.log
+## check php error log:  tail -f /var/log/apache2/access.log
 
-# linux command line cheat sheet
+## pwd        :(Print Working Directory) Show current directory
+## nautilus . : open current  dir in explorer
+
+## linux command line cheat sheet
 open terminal: ctrl+Alt+t <br>
 open current location in the explorers in ubuntu terminal: xdg-open .
 <br>
@@ -11,7 +14,7 @@ undo all unnecessary security: sudo apt install ubuntu-restricted-extras <br>
 enable new text file by right click: touch ~/Templates/"Untitled Document" <br>
 <hr>
 
-# mostly used Options :  
+## mostly used Options :  
 ```
 -E : causes less to automatically exit the first time it reaches end of file. 
 -f : forces non-regular file to open. 
@@ -24,7 +27,7 @@ enable new text file by right click: touch ~/Templates/"Untitled Document" <br>
 -s : causes consecutive blank lines to be squeezed into a single blank line 
 ```
 
-# usefull more options:
+## usefull more options:
 ```
 ~                               : home dir
 example:
@@ -33,7 +36,7 @@ cd ~                            : will change dir to home dir
 /                               : root dir
 ```
 
-#   Bash Commands:
+##   Bash Commands:
 ```
 short note:
 1. uname -a                    :Show system and kernel
@@ -53,7 +56,7 @@ run command: uname -a
 7. man <command>               :Show manual/ details for command
 run command: man date          
 ```
-# Bash Shortcuts
+## Bash Shortcuts
 
 ```
 CTRL-c                          :Stop current command
@@ -74,7 +77,7 @@ see: https://www.youtube.com/watch?v=H0tUtzx2xX8&t=150s
 
 ```
 
-# Bash Variables:
+## Bash Variables:
 ```
 env                             :Show environment variables
 echo $NAME                      :Output value of $NAME variable
@@ -96,7 +99,7 @@ $SHELL                          :Current shell
 ```
 
 
-# cat command
+## cat command
 ### use command to know about cat: man cat
 ```
 cat                             : command use and in next line we can write and at another next line it will print
@@ -113,7 +116,7 @@ cat -n text.txt                 : will add line number to each line cause of '-n
 cat -s text.txt                 : will decreases more than one empty lines to one line cause of '-s' option
 ```
 
-# IO Redirection
+## IO Redirection
 ### use command to know about: man <command>
 ### '<' or  '>' are the directions
 ```
@@ -147,7 +150,7 @@ example:
 cat file.txt | head -7 | tail -5  
 ```
 
-# ls commands / Directory Operations
+## ls commands / Directory Operations
 ### use command to know about ls: man ls
 ```
 pwd                                 :(Print Working Directory) Show current directory 
@@ -175,7 +178,7 @@ examples:
 15. ls -R                           : will show all dirs structure
 ```
 
-# Directory Operations/ mkdir/ rmdir
+## Directory Operations/ mkdir/ rmdir
 ### use command to know about the command: man <command>
 ```                                 
 pwd                                 :(Print Working Directory) Show current directory
@@ -190,7 +193,7 @@ rmdir -p a/b/c/d                    : will remove whole dir structure
 rmdir -pv a/b/c/d                   : (with each step details )will remove whole dir structure
 ```
 
-# ls Options
+## ls Options
 ```
 -a                      :Show all (including hidden)
 example: ls -a
@@ -207,7 +210,7 @@ example2: ls -al        : two option togater
 ```
 
 
-# Search Files:
+## Search Files:
 ```
 grep: Global regular expression print (pattern match and print)
 
@@ -249,7 +252,7 @@ example of use: locate -i school*note   : locate a file that name cotain school 
 
 ```
 
-# File Operations
+## File Operations
 ```
 1. touch file1                                     :Create file1
 2. cat file1 file2                                 :Concatenate files and output
@@ -265,7 +268,7 @@ example of use: locate -i school*note   : locate a file that name cotain school 
 10. tail -f file1                                      :Output last lines of file1 as it changes
 ```
 
-# Process Management
+## Process Management
 ```
 ps                                      :Show snapshot of processes
 top                                     :Show real time processes
@@ -274,7 +277,7 @@ pkill name                              : Kill process with name name
 killall name                            :Kill all processes with names beginning name
 ```
 
-# Nano Shortcuts
+## Nano Shortcuts
 Using Nano Text Editor Commands in Linux
 GNU nano is a popular command-line text editor that is included in most Linux distributions. The interface is comparable to GUI-based text editors, which makes nano a popular choice for those who find vi or emacs commands non-intuitive. This guide shows you how to use Nano Text Editor Commands in Linux.
 see: https://www.linode.com/docs/guides/use-nano-text-editor-commands/
@@ -309,7 +312,7 @@ CTRL+\ Search and replace
 
 
 
-# Screen Shortcuts
+## Screen Shortcuts
 sudo apt install screen
 see: https://linuxize.com/post/how-to-use-linux-screen/
 
@@ -326,7 +329,7 @@ CTRL-A " :Show current instances of terminals.
 CTRL-A A :Rename the current instance of terminal.
 ```
 
-# File Permissions
+## File Permissions
 ```
 chmod 775 file                  : Change mode of file to 775
 chmod -R 600 folder             : Recursively chmod folder to 600
@@ -334,7 +337,7 @@ chown                           :Change file owner to user and
 user :group file                :group to group
 ```
 
-# tar
+## tar
 ```
 tar cf file1.tar dir                     : will comprese the dir folder and name it file.tar
 tar xf file.tar                          : extract tar file  'file.tar' 
@@ -349,7 +352,7 @@ gzip -d file.gz                          :decompresses fle.gz back to fle
 
 <br>
 
-# Network
+## Network
 sudo apt install net-tools
 sudo apt install whois
 <br>
@@ -373,4 +376,4 @@ example: wget http://releases.ubuntu.com/18.04/ubuntu-18.04-live-server-amd64.is
 
 ```
 
-#
+##
