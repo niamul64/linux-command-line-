@@ -1,10 +1,11 @@
-## check php error log:  tail -f /var/log/apache2/error.log
-## check php error log:  tail -f /var/log/apache2/access.log
+### verifies file 128-bit MD5 hashes: md5sum <file path>
+### check php error log:  tail -f /var/log/apache2/error.log
+### check php error log:  tail -f /var/log/apache2/access.log
 
-## pwd        :(Print Working Directory) Show current directory
-## nautilus . : open current  dir in explorer
+### pwd        :(Print Working Directory) Show current directory
+### nautilus . : open current  dir in explorer
 
-## linux command line cheat sheet
+### linux command line cheat sheet
 open terminal: ctrl+Alt+t <br>
 open current location in the explorers in ubuntu terminal: xdg-open .
 <br>
