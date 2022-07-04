@@ -377,4 +377,7 @@ example: wget http://releases.ubuntu.com/18.04/ubuntu-18.04-live-server-amd64.is
 
 ```
 
-##
+## change root password and ssh to root:
+sudo passwd root
+vim /etc/ssh/sshd_config
+change: PermitRootLogin yes
