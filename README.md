@@ -381,3 +381,7 @@ example: wget http://releases.ubuntu.com/18.04/ubuntu-18.04-live-server-amd64.is
 sudo passwd root
 vim /etc/ssh/sshd_config
 change: PermitRootLogin yes
+
+## ssh finger print problem fix
+ssh-keygen -f "/home/niamul/.ssh/known_hosts" -R "192.168.30.42"
+here 192.168.30.42 is the ip where we want to ssh
